@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get More Real Estate Leads - Done-For-You Marketing</title>
+    <meta name="description" content="Struggling with real estate leads? We help realtors attract qualified buyers and sellers with smart, done-for-you ad campaigns that actually work.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo {
+            max-height: 60px;
+            width: auto;
+            animation: bounceLeftRight 3s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="2"/></g></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 50px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+        
+        .assessment-btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .assessment-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.5);
+            background: #ff5252;
+        }
+        
+        .assessment-text {
+            font-size: 1rem;
+            opacity: 0.85;
+            font-style: italic;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 70px;
+            color: #2d3748;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        /* Pain Points Section */
+        .pain-points {
+            background: #f8fafc;
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .pain-item {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left: 6px solid #ff6b6b;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .pain-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .pain-item .icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .pain-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.4;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .benefit-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: transform 0.6s;
+            transform: translateX(-100%);
+        }
+        
+        .benefit-item:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.4);
+        }
+        
+        .benefit-item .icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+        
+        .benefit-item h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-item p {
+            opacity: 0.9;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            color: white;
+            position: relative;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="20" cy="20" r="1.5"/></g></svg>') repeat;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .cta-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.05rem;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.5);
+        }
+        
+        .trust-line {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #718096;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 0;
+            }
+            
+            .logo {
+                max-height: 50px;
+                animation: bounceLeftRightMobile 3s ease-in-out infinite;
+            }
+            
+            @keyframes bounceLeftRightMobile {
+                0% {
+                    transform: translateX(-10px) translateY(0px);
+                }
+                25% {
+                    transform: translateX(0px) translateY(-5px);
+                }
+                50% {
+                    transform: translateX(10px) translateY(0px);
+                }
+                75% {
+                    transform: translateX(0px) translateY(-5px);
+                }
+                100% {
+                    transform: translateX(-10px) translateY(0px);
+                }
+            }
+            
+            .hero {
+                padding: 60px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 40px;
+            }
+            
+            .assessment-btn {
+                padding: 15px 25px;
+                font-size: 1.05rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 50px;
+            }
+            
+            .cta h2 {
+                font-size: 2rem;
+            }
+            
+            .form-container {
+                padding: 40px 25px;
+                margin: 0 10px;
+            }
+            
+            .pain-grid,
+            .benefits-grid {
+                gap: 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.9rem;
+            }
+            
+            .pain-item,
+            .benefit-item {
+                padding: 25px 20px;
+            }
+        }
+        
+        /* Logo Animation */
+        @keyframes bounceLeftRight {
+            0% {
+                transform: translateX(-15px) translateY(0px);
+            }
+            25% {
+                transform: translateX(0px) translateY(-8px);
+            }
+            50% {
+                transform: translateX(15px) translateY(0px);
+            }
+            75% {
+                transform: translateX(0px) translateY(-8px);
+            }
+            100% {
+                transform: translateX(-15px) translateY(0px);
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in-up.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Stagger animations */
+        .pain-item:nth-child(1) { animation-delay: 0.1s; }
+        .pain-item:nth-child(2) { animation-delay: 0.2s; }
+        .pain-item:nth-child(3) { animation-delay: 0.3s; }
+        .pain-item:nth-child(4) { animation-delay: 0.4s; }
+        
+        .benefit-item:nth-child(1) { animation-delay: 0.1s; }
+        .benefit-item:nth-child(2) { animation-delay: 0.2s; }
+        .benefit-item:nth-child(3) { animation-delay: 0.3s; }
+        .benefit-item:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIzNSIgZmlsbD0iIzFmMzY1ZCIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIyNSIgZmlsbD0iIzAwYzg4MyIvPgo8dGV4dCB4PSI0NSIgeT0iNjAiIGZvbnQtZmFtaWx5PSJJbnRlciwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIzMiIgZmlsbD0id2hpdGUiPk08L3RleHQ+CjxwYXRoIGQ9Ik02MCA0MEw3MCAzNUw4MCA0MEw3MCA0NVoiIGZpbGw9IiMxZjM2NWQiLz4KPHBhdGggZD0iTTcwIDMwTDgwIDI1TDkwIDMwTDgwIDM1WiIgZmlsbD0iIzFmMzY1ZCIvPgo8dGV4dCB4PSIxMTAiIHk9IjQwIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMxZjM2NWQiPk1FRElBPC90ZXh0Pgo8dGV4dCB4PSIxMTAiIHk9IjcwIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMxZjM2NWQiPk1JTlRFRDwvdGV4dD4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPg==" alt="Media Minted" class="logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Struggling to Get Consistent Leads for Your Listings?</h1>
+                <p class="subtitle">We help realtors attract qualified buyers and sellers using smart, done-for-you ad campaigns.</p>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb4ljcdqO5JUdJDbhPu1VYArkUGI4NNfwGeJHQfBvaS7GdGw/viewform" target="_blank" class="assessment-btn">
+                    Take Free Assessment
+                </a>
+                <p class="assessment-text">Discover what's blocking your lead generation in 3 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="section pain-points">
+        <div class="container">
+            <h2 class="section-title">Sound Familiar?</h2>
+            <div class="pain-grid">
+                <div class="pain-item fade-in-up">
+                    <span class="icon">❌</span>
+                    <h3>Not enough buyers calling on your listings</h3>
+                </div>
+                <div class="pain-item fade-in-up">
+                    <span class="icon">❌</span>
+                    <h3>Spending money on ads with little to no results</h3>
+                </div>
+                <div class="pain-item fade-in-up">
+                    <span class="icon">❌</span>
+                    <h3>Competing with big agencies with bigger budgets</h3>
+                </div>
+                <div class="pain-item fade-in-up">
+                    <span class="icon">❌</span>
+                    <h3>Wasting hours on marketing instead of closing deals</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits">
+        <div class="container">
+            <h2 class="section-title">Here's How We Solve It</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item fade-in-up">
+                    <span class="icon">🎯</span>
+                    <h3>Precision Targeting</h3>
+                    <p>Target the right buyers and sellers with precision using data-driven campaigns that reach motivated prospects.</p>
+                </div>
+                <div class="benefit-item fade-in-up">
+                    <span class="icon">⏱</span>
+                    <h3>Done-For-You Setup</h3>
+                    <p>Save time — we set it up and optimize it for you so you can focus on closing more deals.</p>
+                </div>
+                <div class="benefit-item fade-in-up">
+                    <span class="icon">💸</span>
+                    <h3>Budget Optimization</h3>
+                    <p>Maximize your ad budget for real results with campaigns that convert visitors into qualified leads.</p>
+                </div>
+                <div class="benefit-item fade-in-up">
+                    <span class="icon">📈</span>
+                    <h3>More Commissions</h3>
+                    <p>More leads, more listings, more commissions. It's that simple when the system works.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Finally Get Leads That Actually Convert?</h2>
+                <p class="cta-subtitle">Enter your info below and let's talk.</p>
+                
+                <div class="form-container">
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Get Qualified Leads</button>
+                    </form>
+                    
+                    <p class="trust-line">No spam — just a quick call to see if we're the right fit for your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Media Minted. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            
+            // Basic validation
+            if (!name || !email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Processing...';
+            submitBtn.disabled = true;
+            submitBtn.style.background = '#4CAF50';
+            
+            // Build Calendly URL with pre-filled data
+            const calendlyUrl = 'https://calendly.com/yourmediamom/marketing-consultation';
+            const params = new URLSearchParams();
+            
+            params.append('name', name);
+            params.append('email', email);
+            if (phone) {
+                params.append('a1', phone); // Calendly custom field for phone
+            }
+            
+            const finalUrl = `${calendlyUrl}?${params.toString()}`;
+            
+            // Simulate form processing delay
+            setTimeout(() => {
+                // Open Calendly in new tab
+                window.open(finalUrl, '_blank');
+                
+                // Show success message
+                submitBtn.textContent = 'Success! Check the new tab';
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    document.getElementById('leadForm').reset();
+                }, 3000);
+            }, 1500);
+        });
+        
+        // Scroll animations
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add staggered delay based on element position
+                        setTimeout(() => {
+                            entry.target.classList.add('animate');
+                        }, index * 100);
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
+            });
+        }
+        
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollAnimations();
+        });
+        
+        // Add loading protection
+        window.addEventListener('beforeunload', function(e) {
+            const submitBtn = document.querySelector('.submit-btn');
+            if (submitBtn && submitBtn.disabled) {
+                e.preventDefault();
+                e.returnValue = 'Form is being processed. Are you sure you want to leave?';
+                return e.returnValue;
+            }
+        });
+    </script>
+</body>
+</html>
